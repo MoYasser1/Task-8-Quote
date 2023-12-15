@@ -1,0 +1,64 @@
+/* تحديد أن جميع العناصر يبدأ تنسيقها من الصفر */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* تحديد خصائص الصفحة نفسها */
+html {
+    font-family: Gilroy; /* نوع الخط */
+    display: flex; /* استخدام تخطيط مرن */
+    align-items: center; /* توسيط العناصر عمودياً */
+    justify-content: center; /* توسيط العناصر أفقياً */
+    height: 100vh; /* تعيين الارتفاع بنسبة لحجم الشاشة */
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_Palestine.svg/640px-Flag_of_Palestine.svg.png); /* صورة الخلفية */
+    background-repeat: no-repeat; /* عدم تكرار الصورة */
+    background-position: center; /* تحديد مكان الصورة */
+    background-size: cover; /* تحديد حجم الصورة لتغطية الشاشة */
+}
+
+/* تنسيق العناصر في الحاوية الرئيسية */
+.container {
+    width: 550px;
+    height: 250px;
+}
+
+
+/* تنسيق محتوى الصفحة الرئيسي */
+.main-content {
+    margin: 20px;
+    width: 100%;
+    height: 300px;
+    padding: 50px 40px;
+}
+
+/* تنسيق منطقة النص */
+.main-content .text-area {
+
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+/* تنسيق اسم الشخص */
+.main-content .person {
+    font-size: 1.6rem;
+    color: red;
+    text-transform: uppercase; /* تحويل النص إلى حروف كبيرة */
+    margin-top: 20px;
+}
+
+/* تنسيق زر الإقتباس الجديد */
+.button-area button {
+    background-color: rgba(26, 123, 11, 0.929);
+    color: white;
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* تنسيق زر الإقتباس الجديد عند الضغط عليه */
+.button-area button:active {
+    background-color: lightblue;
+}
